@@ -20,9 +20,9 @@ class Producto(models.Model):
     categorias = models.ForeignKey(CategoriaProd, on_delete=models.CASCADE)
     imagen = models.ImageField (upload_to="tienda", null= True, blank= True)
     disponibilidad = models.BooleanField(default= True)
-    created = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField (auto_now_add= True)
-    '''precio = models.IntegerField ()'''
+    created = models.DateTimeField(auto_now_add=True, null= True)
+    updated = models.DateTimeField (auto_now_add= True, null= True)
+    precio = models.FloatField()
 
 
     class Meta:
