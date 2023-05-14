@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'blog',
     'contacto',
     'tienda',
+    'carrito',
 ]
 
 MIDDLEWARE = [
@@ -139,5 +140,8 @@ EMAIL_BACKEND= "django.core.mail.backends.smtp.emailBackend"
 EMAIL_HOST= "smtp.gmail.com"
 EMAIL_USE_TLS= True
 EMAIL_PORT= 587
-EMAIL_HOST_USER="tetsukaikari3@gmail.com"
+EMAIL_HOST_USER="fernandosuarez1985@gmail.com"
 EMAIL_HOST_PASSWORD="3v@ng3l10n"
+
+# admin
+# admin1234
