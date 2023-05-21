@@ -16,7 +16,7 @@ def contacto(request):
             contenido=request.POST.get("contenido")
 
             email=EmailMessage("Mensaje de App"
-            "El usuario con nomber {} con la direccion {} escribe lo siguiente: \n\n {}".format(nombre, email, contenido),
+            "El usuario con nombre {} con la direccion {} escribe lo siguiente: \n\n {}".format(nombre, email, contenido),
             "", ["tetsukaikari3@gmail.com"], reply_to=[email])
 
             try:
